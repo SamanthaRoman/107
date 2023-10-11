@@ -2,52 +2,63 @@
 
 let catalog = [
     {
-        "title": "Orange",
-        "category": "fruit", "veggies", "meat",
+        "title": "Green Breeze",
+        "category": "soy wax base",
         "price": 50.00,
-        "image": "somewhere",
+        "image": "green-breeze.jpg",
         "_id": "1", // don't repeat this please
     },
     {
-        "title": "Orange",
-        "category": "fruit", "veggies", "meat",
+        "title": "Oak Tree",
+        "category": "beeswax",
         "price": 50.00,
-        "image": "somewhere",
+        "image": "oak-tree.jpg",
         "_id": "2", // don't repeat this please
     },
     {
-        "title": "Orange",
-        "category": "fruit", "veggies", "meat",
+        "title": "White Snow",
+        "category": "soy wax base",
         "price": 50.00,
-        "image": "somewhere",
+        "image": "white-snow.jpg",
         "_id": "3", // don't repeat this please
     },
     {
-        "title": "Orange",
-        "category": "fruit", "veggies", "meat",
+        "title": "Blue Jasmine",
+        "category": "soy wax base",
         "price": 50.00,
-        "image": "somewhere",
+        "image": "blue-jasmine.jpg",
         "_id": "4", // don't repeat this please
     },
     {
-        "title": "Orange",
-        "category": "fruit", "veggies", "meat",
+        "title": "Bergamot",
+        "category": "beeswax base",
         "price": 50.00,
-        "image": "somewhere",
+        "image": "bergamot.jpg",
         "_id": "5", // don't repeat this please
     },
     {
-        "title": "Orange",
-        "category": "fruit", "veggies", "meat",
+        "title": "Almond Spice",
+        "category": "soy wax base",
         "price": 50.00,
-        "image": "somewhere",
+        "image": "almond-spice.jpg",
         "_id": "6", // don't repeat this please
     },
     {
-        "title": "Orange",
-        "category": "fruit", "veggies", "meat",
+        "title": "Night Sky",
+        "category": "beeswax base",
         "price": 50.00,
-        "image": "somewhere",
+        "image": "night-sky.jpg",
         "_id": "7", // don't repeat this please
     },
 ];
+
+// we create a component with a function inside
+// because we are in js not java script (jsx)
+
+class DataService {
+    getProducts(){ // function inside component
+        return catalog; // retruning all the products
+    }
+}
+
+export default DataService;
