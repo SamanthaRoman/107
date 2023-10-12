@@ -2,7 +2,7 @@ import "./quantityPicker.css";
 import { useState } from "react";
 
 
-function QuantityPicker(){
+function QuantityPicker(props){
     const [quantity,setQuantity] = useState(1);
     
     function increase(){
@@ -10,6 +10,7 @@ function QuantityPicker(){
         // logic to increment the value of the quantity each time someoneclicks. 
         let value = quantity + 1;
         setQuantity(value);
+        props.onChange(value); // here we specify to props that on the change event we will pass the value through props/ 
     };
 
     function decrease(){
@@ -18,6 +19,7 @@ function QuantityPicker(){
         if(quantity === 1){return};// if we have a value of 1 the funciton will terminate and wont continue to execute. 
         let value = quantity - 1;
         setQuantity(value);
+        props.onChange(value);
     };
 
 

@@ -12,6 +12,10 @@ function Product(props){
         // when the component is loaded
         console.log("Hello I'm a product");
 },[]); // we also add the dictionarry or array symbol
+
+function onQuantityChange(qty){
+    console.log("new quantity " + qty);
+}
     return(
         <div className="product">
             <img src={"/images/"+props.data.image} alt="" />
@@ -20,8 +24,9 @@ function Product(props){
             <div className="prices">
                 <label>Price:{props.data.price}</label>
                 <label>Total:</label>
+                {/* include the displayflex */}
             </div>
-            <QuantityPicker/>
+            <QuantityPicker onChange={onQuantityChange}/>
         </div>
     );
 }

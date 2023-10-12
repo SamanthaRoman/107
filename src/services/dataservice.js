@@ -3,49 +3,49 @@
 let catalog = [
     {
         "title": "Green Breeze",
-        "category": "soy wax base",
+        "category": "scented",
         "price": 50.00,
         "image": "green-breeze.jpg",
         "_id": "1", // don't repeat this please
     },
     {
         "title": "Oak Tree",
-        "category": "beeswax",
+        "category": "scented",
         "price": 50.00,
         "image": "oak-tree.jpg",
         "_id": "2", // don't repeat this please
     },
     {
         "title": "White Snow",
-        "category": "soy wax base",
+        "category": "unscented",
         "price": 50.00,
         "image": "white-snow.jpg",
         "_id": "3", // don't repeat this please
     },
     {
         "title": "Blue Jasmine",
-        "category": "soy wax base",
+        "category": "scented",
         "price": 50.00,
         "image": "blue-jasmine.jpg",
         "_id": "4", // don't repeat this please
     },
     {
         "title": "Bergamot",
-        "category": "beeswax base",
+        "category": "organic",
         "price": 50.00,
         "image": "bergamot.jpg",
         "_id": "5", // don't repeat this please
     },
     {
         "title": "Almond Spice",
-        "category": "soy wax base",
+        "category": "unscented",
         "price": 50.00,
         "image": "almond-spice.jpg",
         "_id": "6", // don't repeat this please
     },
     {
         "title": "Night Sky",
-        "category": "beeswax base",
+        "category": "scented",
         "price": 50.00,
         "image": "night-sky.jpg",
         "_id": "7", // don't repeat this please
