@@ -4,14 +4,14 @@ let catalog = [
     {
         "title": "Green Breeze",
         "category": "scented",
-        "price": 50.00,
+        "price": 32.24,
         "image": "green-breeze.jpg",
         "_id": "1", // don't repeat this please
     },
     {
         "title": "Oak Tree",
         "category": "scented",
-        "price": 50.00,
+        "price": 35.87,
         "image": "oak-tree.jpg",
         "_id": "2", // don't repeat this please
     },

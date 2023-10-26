@@ -1,7 +1,101 @@
-.btn-filter, .btn-clear-filter{
-    margin: 0 5px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    /* box-shadow: 5px 5px 5px 5px red; */
-}
+/* Reset some default styles for consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  /* Add a subtle pale pink shadow behind images */
+img {
+    box-shadow: 0 0 25px rgba(255, 153, 168, 0.385); /* Soft pink shadow */
+  }
+  
+  
+  /* Set a soft, feminine color palette */
+  body {
+    background-color: #f8e0e0; /* Soft pink background */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark gray text for contrast */
+  }
+  
+  /* Create a container for your content with a subtle shadow */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the header with a soft gradient background and a candle image */
+  .header {
+    background: linear-gradient(to right, #f8e0e0, #fcc3c3); /* Light gradient */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    color: #ff99a8; /* Soft pink text for contrast */
+  }
+  
+  .header img {
+    max-width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* Style the product catalog section */
+  .catalog {
+    padding: 20px;
+  }
+  
+  /* Style the product cards with a feminine and cozy design */
+  .product {
+    background-color: #fff;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product h2 {
+    font-size: 24px;
+    color: #ff99a8; /* Soft pink text for headings */
+  }
+  
+  .product p {
+    font-size: 16px;
+    color: #555; /* Slightly lighter gray text */
+  }
+  
+  /* Create a button style for filtering with a pink accent */
+  .btn {
+    padding: 10px 20px;
+    background-color: #ff99a8; /* Soft pink button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the "Show All" button */
+  .btn-clear-filter {
+    background-color: #ff99a8;
+    margin-right: 10px;
+  }
+  
+  /* Style the category filter buttons */
+  .btn-filter {
+    background-color: #ff99a8;
+    margin-right: 10px;
+  }
+  
+  /* Add hover effect for buttons */
+  .btn:hover {
+    background-color: #d97182; /* Slightly darker pink on hover */
+  }
+  

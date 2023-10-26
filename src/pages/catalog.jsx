@@ -71,7 +71,7 @@ function clearFilters(){
         {categories.map(arrowCategories => <button key={arrowCategories} onClick={()=>filter(arrowCategories)} className="btn btn-sm btn-primary btn-filter" >{arrowCategories}</button>)}
         <br />
         {/* below we use product as a tag and add an attribute  */}
-        {productsToDisplay.map( arrowProducts => <Product key={arrowProducts._id} data={arrowProducts} />)} 
+        {productsToDisplay.map((item) => <Product key={item._id} data={item} />)} 
         {/* data saves each item in memory here so we pass props to the product function. */}
 
     </div>
