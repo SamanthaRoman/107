@@ -1,14 +1,15 @@
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import DataContext from "../store/dataContext";
 
 // by importing bootstrap into this root file all other files have access to boot strap. 
 
 function Product(props){
     const [quantity, setQuantity] = useState(1) // we set the enitial variable to 1 we can't use 0. 
-    
+    const addToCart = useContext(DataContext).addToCart;
 
 
     useEffect(function(){
@@ -25,6 +26,13 @@ function getTotal() {// a function to calculate the total and have it only 2 dec
 
     return total.toFixed(2);
 }
+
+function handleAdd() {
+    let prodCart = {...props.data};
+    prodCart.quantity = quantity;
+    addToCart(prodCart);
+}
+
     return(
         <div className="product">
             <img src={"/images/"+props.data.image} alt="" />
@@ -36,6 +44,8 @@ function getTotal() {// a function to calculate the total and have it only 2 dec
                 {/* include the displayflex */}
             </div>
             <QuantityPicker onChange={onQuantityChange}/>
+
+            <button onClick={handleAdd} className="btn btn-sm btn-outline-success" >Add</button>
         </div>
     );
 }
