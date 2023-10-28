@@ -1,5 +1,38 @@
 .admin {
     min-height: 500px;
-    background-color: blue;
-    color: white;
+    background-color: rgba(249, 167, 242, 0.446);
+    color: rgb(0, 0, 0);
 }
+
+.admin .parent {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-around;
+}
+
+.admin .products {
+    flex: 400px;
+}
+
+.admin .codes {
+    flex: 400px;
+}
+
+.admin form {
+    background-color: rgba(244, 244, 244, 0.244);
+
+}
+
+.admin label {
+    background-color: rgba(254, 163, 245, 0.242);
+    width: 100px;
+    text-align: left;
+    padding-left: 5px;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.btn {
+    margin-top: 5px;
+}
+
