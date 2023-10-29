@@ -64,7 +64,7 @@ function Navbar(){
             <form className="d-flex" role="search">
 
               <div>
-              <i class="fa-regular fa-face-smile-beam"></i> {user.name}
+              <i className="fa-regular fa-face-smile-beam"></i> {user.name}
               </div>
 
 

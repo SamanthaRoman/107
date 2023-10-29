@@ -18,3 +18,10 @@
     width: 175px; height: 200px;
     /* padding: 5px 0; */
 }
+
+.product .controls{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(252, 233, 233);
+    padding-bottom: 5px;
+}

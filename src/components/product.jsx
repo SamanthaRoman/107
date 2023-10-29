@@ -42,10 +42,11 @@ function handleAdd() {
                 <label>Price: ${props.data.price.toFixed(2)}</label>
                 <label>Total: ${getTotal()} </label> 
                 {/* include the displayflex */}
+            </div >
+            <div className="controls">
+                <QuantityPicker onChange={onQuantityChange}/>
+                <button onClick={handleAdd} className="btn btn-sm btn-outline-success" >Add</button>
             </div>
-            <QuantityPicker onChange={onQuantityChange}/>
-
-            <button onClick={handleAdd} className="btn btn-sm btn-outline-success" >Add</button>
         </div>
     );
 }
