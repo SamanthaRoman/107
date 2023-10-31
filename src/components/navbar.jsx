@@ -17,6 +17,16 @@ function Navbar(){
   const cart = useContext(DataContext).cart;
 
 
+  function getCount() {
+    let sum = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+      const prod = cart[i];
+      sum += prod.quantity;
+    }
+
+    return sum;
+  }
 
     return(
       <nav className="navbar navbar-expand-lg navbar-light bg-body-primary">
@@ -69,7 +79,7 @@ function Navbar(){
 
 
               <Link to="/cart" className="btn btn-outline-primary">
-                {cart.length} Cart
+                {getCount()} Cart
               </Link>
             </form>
           </div>

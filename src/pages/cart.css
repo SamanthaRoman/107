@@ -1,0 +1,17 @@
+.cart .parent {
+    display: flex;
+}
+
+.cart .list {
+    margin: 5px 30px;
+    flex: 3;
+}
+
+.cart aside {
+    flex: 1;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 0 20px;
+}
