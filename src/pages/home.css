@@ -4,4 +4,24 @@
 
 .home h2{
     color: rgb(255, 50, 84);
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
+.home-page {
+    display: flex;
+}
+.home-page img {
+    height: 350px;
+}
+.details {
+    flex: 4;
+    background-color: rgba(255, 255, 255, 0.271);
+    border: solid .5px white
+}
+.blink_me {
+    animation: blinker 1.5s linear infinite;
+  }
+  
+  @keyframes blinker {  
+    50% { opacity: 0; }
+  }

@@ -4,4 +4,19 @@
 
 .about h2{
     color: rgb(255, 50, 84);
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+.about-page {
+    display: flex;
+}
+.about-page img {
+    height: 200px;
+}
+.details {
+    background-color: rgba(255, 255, 255, 0.271);
+    border: solid .5px white;
+    border-radius: 10px;
 }
