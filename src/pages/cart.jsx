@@ -42,7 +42,7 @@ function Cart(){
                 </div>
                 <aside>
                     <h4>Total</h4>
-                    <h3>{getTotal()}</h3>
+                    <h3>${getTotal()}</h3>
                     <hr />
                     <div className="input-group">
                         <input type="text" className="form-control" placeholder="Coupon Code" id="" />
