@@ -19,10 +19,10 @@ function Catalog(){
 
 
     // need a function to exectue 
-    function loadCatalog(){
+    async function loadCatalog(){
         // get the product that I have in the catalog (data service)
         let service = new DataService();
-        let prods = service.getProducts(); // prods is products
+        let prods = await service.getProducts(); // prods is products
         console.log(prods);
         setProducts(prods);// passing all prods to our state variable. which its expecting an array. 
         setProductsToDisplay(prods);

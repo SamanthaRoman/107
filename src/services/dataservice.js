@@ -1,3 +1,5 @@
+import axios from "axios";
+
 // create a library/dictionary
 
 let catalog = [
@@ -56,8 +58,18 @@ let catalog = [
 // because we are in js not java script (jsx)
 
 class DataService {
-    getProducts(){ // function inside component
-        return catalog; // retruning all the products
+    async getProducts(){ // function inside component
+        // use async with await. they must be used together
+        // return catalog; // retruning all the products
+
+        const response = await axios.get("http://127.0.0.1:5000/api/catalog");
+        return response.data;
+    }
+
+
+    async saveProduct(product) {
+        const response = await axios.post("http://127.0.0.1:5000/api/catalog", product);
+        return response.data;
     }
 }
 

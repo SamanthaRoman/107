@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
 import "./admin.css";
-import { useState } from "react";
+import DataService from "../services/dataservice";
 
 function Admin(){
 
@@ -15,6 +16,24 @@ const [coupon, setCoupon] = useState({
     code: '',
     discount: 0,
 });
+
+
+useEffect(function() {
+    loadProducts();
+    loadCoupons();
+}, []);
+
+async function loadProducts() {
+    const service = new DataService();
+    let productsResponse = await service.getProducts();
+    setAllProducts(productsResponse);
+}
+
+async function loadCoupons() {
+    const service = new DataService();
+    let couponsResponse = await service.getCoupons();
+    setAllCoupons(couponsResponse);
+}
 
 function handleProductChange(e){
     let name = e.target.name;
@@ -35,13 +54,25 @@ function handleCouponChange(e){
 
 function saveProduct(){
     console.log(product);
-    
+    // fix the price to be a number
+    let fixedProduct = {...product};
+    fixedProduct.price = parseFloat(product.price);
+    console.log(fixedProduct)
+
+    const service = new DataService();
+    service.saveProduct(fixedProduct);
+
     let copy = [...allProducts];
     copy.push(product);
     setAllProducts(copy); // you can call it newList everyhere vs copy if you want
 }
 function saveCoupon(){
     console.log(coupon);
+    let fixedCoupon = {...coupon};
+    fixedCoupon.discount = Number(coupon.discount);
+
+    const service = new DataService();
+    service.saveCoupon(fixedCoupon);
 
     let copy = [...allCoupons];
     copy.push(coupon);
